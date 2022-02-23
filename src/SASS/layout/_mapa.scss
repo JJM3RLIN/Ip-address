@@ -1,7 +1,7 @@
 @use 'base/mixins' as m;
 #map {
-     height: 40rem; 
+     height: 42rem; 
  @include m.tablet{
-      height: 45rem;
+      height: 46rem;
  }    
 }
