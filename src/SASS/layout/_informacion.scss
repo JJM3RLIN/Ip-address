@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.datos{
+    z-index: 10000000;
+    background-color: v.$blanco;
+    padding: 1rem;
+    position: relative;
+    top: 3.5rem;
+    border-radius: 2rem;
+ @include m.tablet{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;   
+   padding: 2rem;
+     
+ }
+}
+.datos-info{
+    text-align: center;
+    p{
+       color: v.$grisOscuro;
+    }
+    .bold{
+        font-weight: v.$mediana;
+        font-size: 1.5rem;
+        color: v.$negro;
+    }
+    @include m.tablet{
+        p, .bold{
+            margin:0 2rem;
+            text-align: left;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .bold{
+            font-size: 2.5rem;
+        }
+   }
+
+    @include m.tablet{
+        border-right: 1px solid v.$grisOscuro;
+        margin-left: 1.5rem;
+        &:last-child{
+            border: none;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+   
+}

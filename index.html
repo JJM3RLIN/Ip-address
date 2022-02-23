@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./build/images/favicon-32x32.png"
+    />
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="build/css/index.css" />
+
+    <!--Mapa-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main >
+      <div class="background">
+        <div class="contenedor">
+          <h1 class="title">IP Address Tracker</h1>
+      
+            <form >
+              <div class="input">
+                <input type="text" placeholder="Search for any IP address" id="buscarIp" />
+              <button class="btn" type="submit">
+                <img src="./build/images/icon-arrow.svg" />
+              </button>
+              </div>
+            </form>
+          
+        </div>
+
+        <section class="datos contenedor">
+          <div class="datos-info">
+            <p>IP Address</p>
+            <p  class="bold" id="ip"></p>
+          </div>
+          <div class="datos-info">
+            <p>location</p>
+            <p  class="bold" id="location"></p>
+          </div>
+          <div class="datos-info">
+            <p>Timezone</p>
+            <p id="time"  class="bold"></p>
+          </div>
+          <div class="datos-info">
+            <p>ISP</p>
+            <p id="isp" class="bold"></p>
+          </div>
+        </section>
+      </div>
+
+      <section id="map"></section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p>Coded by <a href="https://github.com/JJM3RLIN" target="_blank">M3rlin</a>.</p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

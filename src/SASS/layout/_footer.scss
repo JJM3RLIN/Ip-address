@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.footer{
+    text-align: center;
+   background-image: url('/build/images/pattern-bg.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    padding: .5rem;
+    p{
+        color: v.$blanco;
+        font-size: 1.5rem;
+    }
+    a{
+        font-weight: v.$mediana;
+        color: v.$blanco;
+        &:hover{
+            color: darken($color: v.$blanco, $amount: 10%);
+        }
+    }
+    @include m.tablet{
+        p{
+           font-size:  2rem;
+        }
+    }
+}

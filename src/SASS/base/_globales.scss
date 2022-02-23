@@ -1,0 +1,37 @@
+@use 'variables' as v;
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+font-family: v.$fuentePrincipal;
+ font-size: 1.6rem;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2,h3,h4{
+    text-align: center;
+    font-weight: v.$mediana;
+}
+h2{
+   font-size: 2rem;   
+   color: v.$negro;  
+   font-weight: v.$ligera;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: v.$ligera;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
